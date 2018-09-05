@@ -1,0 +1,39 @@
+{{!
+	Secondary Story Block
+	Params:
+		image:	(string) image name with the extension
+        image-alt: (string) Alt text for the image tag
+		image-credit: (string) If there is a image credit info
+        article-link: (string) URL to the main article
+        category: (string) Category of the article
+        title: (string) Title of the Article
+        author: (string) Name of the author of the article
+		resume: (string) Short version of the article.
+}}
+<table class="story-wrapper" cellpadding="0" cellspacing="0">
+	<tr>
+		<td>
+
+            <table class="image-wraper">
+                <tr>
+                    <td>
+                        <a class="secondary-story-img-link" href="{{ article-link }}" target="_blank">
+                            <img src="../img/{{ image }}" alt="{{ image-alt }}">
+                            {{#if image-credit}}
+                                <p class="image-credit">{{ image-credit }}</p>
+                            {{/if}}
+                        </a>
+                    </td>
+                </tr>
+            </table>
+
+
+            <p class="article-category">{{ category }}</p>
+            <a href="{{ article-link }}" target="_blank">
+                <h2 class="article-title">{{ title }}</h2>
+            </a>
+            <p class="article-author">Por <span class="caps">{{ author }}</span></p>
+            <p class="article-resume">{{ resume }}</p>
+		</td>
+	</tr>
+</table>

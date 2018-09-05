@@ -9,6 +9,8 @@ $br: 3px; // Border radius
 $btn-br: 5px; // Border radius
 $primary-color: #348eda; // Primary color for buttons and links
 $font-color: #111111; // Default font color
+$heading-font-family: georgia, "Times New Roman";
+$plain-font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 
 // Typography
 // -------
@@ -38,4 +40,5 @@ $notice-margin:             10px 0 !default;
 // --------
 
 $divider-margin:			20px 0 !default;
+$divider-compact-margin:    5px 0 !default;
 $divider-color:				#ccc !default;

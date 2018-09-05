@@ -1,0 +1,50 @@
+{{!
+	Networks
+	Params:
+		message: (string) Call to action message
+        instagram-link: (string) link to the instagram account page
+		youtube-link: (string) link to the youtube channel page
+        twitter-link: (string) link to the twitter provile page
+        facebook-link: (string) link to the facebook account page
+}}
+<table class="networks-wrapper" cellpadding="0" cellspacing="0">
+	<tr>
+        <td></td>
+		<td>
+            <p class="networks-message">{{message}}</p>
+            <table class="networks-container">
+                <tr>
+                    {{#if instagram-link}}
+                    <td>
+                        <a href="{{instagram-link}}" target="_blank">
+                            <img src="../img/icons8-instagram-50.png" alt="Instagram shorcut">
+                        </a>
+                    </td>
+                    {{/if}}
+                    {{#if youtube-link}}
+                    <td>
+                        <a href="{{youtube-link}}" target="_blank">
+                            <img src="../img/icons8-play-button-50.png" alt="Youtube shorcut">
+                        </a>
+                    </td>
+                    {{/if}}
+                    {{#if twitter-link}}
+                    <td>
+                        <a href="{{twitter-link}}" target="_blank">
+                            <img src="../img/icons8-twitter-50.png" alt="Twitter shorcut">
+                        </a>
+                    </td>
+                    {{/if}}
+                    {{#if facebook-link}}
+                    <td>
+                        <a href="{{facebook-link}}" target="_blank">
+                            <img src="../img/icons8-facebook-50.png" alt="Facebook shorcut">
+                        </a>
+                    </td>
+                    {{/if}}
+                </tr>
+            </table>
+		</td>
+        <td></td>
+	</tr>
+</table>

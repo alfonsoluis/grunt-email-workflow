@@ -1,0 +1,23 @@
+.networks-wrapper {
+
+    & tr td {
+        padding: 0;
+        text-align: center;
+
+        .networks-message {
+            margin: 0 0 10px 0;
+            font-family: $plain-font-family;
+        }
+
+        .networks-container {
+            tr td {
+                font-family: $plain-font-family;
+
+                img {
+                    opacity: 0.7;
+                    width: 40px;
+                }
+            }
+        }
+    }
+}

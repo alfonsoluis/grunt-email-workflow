@@ -2,27 +2,69 @@
     RESPONSIVE AND MOBILE FRIENDLY STYLES
 ------------------------------------- */
 
-table[class=body]{
-  @media only screen and (max-width: $width+40) {
+table.body {
 
-    // Type
-    h1,
-    h2,
-    h3,
-    h4 {
-      font-weight: 600 !important;
+  @media only screen and (min-width: 1024px) {
+    .container {
+      max-width: $width !important;
+      width: $width !important;
     }
 
+    .content {
+      max-width: $width !important;
+    }
+
+    .story-wrapper {
+      table.image-wraper, table.video-wrapper {
+          width: 40% !important;
+      }
+    }
+  }
+
+  @media only screen and (min-width: $width+40) and (max-width: 1024px) {
+    .story-wrapper {
+      table.image-wraper, table.video-wrapper {
+          width: 50% !important;
+      }
+    }
+  }
+
+
+  @media only screen and (max-width: $width+40) {
+
+    .story-wrapper {
+      table.image-wraper {
+        width: 100% !important;
+        margin-left: 0 !important;
+        padding-left: 0 !important;
+      }
+
+      table.video-wrapper {
+        width: 100% !important;
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+        padding-right: 0 !important;
+      }
+    }
+
+    // Type
     h1 {
-      font-size: 22px !important;
+      font-size: 26px !important;
+      line-height: 1.3em;
     }
 
     h2 {
-      font-size: 18px !important;
+      font-size: 22px !important;
+      line-height: 1.3em !important;
     }
 
     h3 {
       font-size: 16px !important;
+    }
+
+    .xs-plain {
+      font-size: 13px;
+      text-align: center;
     }
 
     // Spacing
@@ -40,6 +82,44 @@ table[class=body]{
     .btn table,
     .btn a {
       width: 100% !important;
+    }
+
+    // Logos
+    .logo {
+      width: 100px !important;
+    }
+
+    // separator
+    .compact-separator {
+      margin: 10px 0 15px 0 !important;
+    }
+
+    .divider {
+      &-spacer {
+        padding: 10px 0 !important;
+      }
+    }
+
+    // footer
+
+    .footer-content-wrapper tbody tr td.align-left {
+        text-align: center !important;
+    }
+
+    .footer-content-wrapper tbody tr td.align-left p {
+      margin: 0 !important;
+  }
+
+    .responsive-shadow-footer {
+      display: none;
+    }
+
+    .shadow-footer {
+      display: table !important;
+    }
+
+    .shadow-footer-divider {
+      display: table !important;
     }
   }
 }

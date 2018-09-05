@@ -1,0 +1,154 @@
+---
+layout: default.hbs
+subject: Custom Newsletter Template
+---
+<div style="display: none; max-height: 0px; overflow: hidden;">
+Preview text for Web or Mobile email clients such as Gmail, Outlook.
+</div>
+
+<div style="display: none; max-height: 0px; overflow: hidden;">
+&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
+</div>
+
+<table class="main">
+  <tr>
+    <td class="wrapper">
+      <table>
+        <tr>
+          <td>
+            <p class="xs-plain"> Newsletter Title&nbsp;&nbsp;|&nbsp;&nbsp;Serial nº 88 </p>
+            <hr class="compact-separator">
+
+            <table>
+              <tr>
+                <td>
+                  <a href="http://www.kas.de/uruguay/es/" target="_blank" title="KAF Oficina Uruguay" >
+                    <img src="https://via.placeholder.com/300x130" alt="Logotipo FUNDACIÓN KONRAD ADENAUER" class="logo">
+                  </a>
+                </td>
+                <td class="align-right">
+                  <a href="http://dialogopolitico.org" target="_blank" title="Diálogo Pólítico" rel="noopener noreferrer">
+                    <img src="https://via.placeholder.com/300x130" alt="Logotipo Portal dialogopolitico.org" class="logo">
+                  </a>
+                </td>
+              </tr>
+            </table>
+
+            {{> divider }}
+
+            {{> main_story
+                image='https://via.placeholder.com/600x300'
+                image-alt='Michelle Bachelet'
+                article-link='http://dialogopolitico.org/agenda/la-constitucion-de-bachelet-el-legado-por-sobre-el-proyecto/'
+                category='Agenda'
+                title='El legado por sobre el proyecto'
+                author='Ignacio Imas Arenas'
+                resume='¿Qué motivó a la expresidenta a presentar un proyecto de ley para crear una nueva Constitución en Chile aun cuando no había un escenario legislativo propicio para que tuviera éxito?'
+            }}
+
+            {{> divider type='compact' }}
+
+            {{> secondary_story
+                image='https://via.placeholder.com/600x300'
+                image-alt='Imagen bandera Italia'
+                article-link='http://dialogopolitico.org/comunicacion/elecciones-en-italia-es-posible-el-gobierno-de-los-euroescepticos/'
+                category='Comunicación'
+                title='Italia: ¿gobierno de los "euroescépticos"?'
+                author='Andrea Betti'
+                resume='Las elecciones generales dejaron un resultado claro, pero no definitivo. La dinámica ha dejado a un lado la tensión tradicional izquierda-derecha para pasar a europeístas versus euroescépticos.'
+            }}
+
+            {{> divider type='compact' }}
+
+            {{> secondary_story
+                image='https://via.placeholder.com/600x300'
+                image-alt='Medios impresos'
+                article-link='http://dialogopolitico.org/agenda/dinero-publico-para-la-prensa-mexicana/'
+                category='Agenda'
+                title='Dinero público para la prensa mexicana'
+                author='Carlos Castillo'
+                resume='La falta de regulación en los montos que el gobierno invierte en publicidad incide en la calidad de los medios de comunicación y atenta contra la objetividad e imparcialidad.'
+            }}
+
+            {{> divider type='compact' }}
+
+            {{> secondary_story
+                image='https://via.placeholder.com/600x300'
+                image-alt='Bandera Uruguay'
+                article-link='http://dialogopolitico.org/debates/el-uruguay-de-la-jutep-su-etica-y-nuestra-ley/'
+                category='Debates'
+                title='El Uruguay de la Junta de Transparencia'
+                author='Gustavo A. Calvo'
+                resume='El país se ha visto sacudido por el protagonismo de un órgano que cuestiona contrataciones estatales, el comportamiento de funcionarios estatales y pone en relieve una gran discusión sobre la ética pública.'
+            }}
+
+            {{> video_block
+                image='https://via.placeholder.com/600x300'
+                image-alt='Video entrevista Adriana Amado'
+                link='https://www.youtube.com/watch?v=h2fqtwyRAMQ&feature=youtu.be'
+                title='¿Qué pasa con el periodismo?'
+                resume='Adriana Amado (Doctora en Ciencias Sociales y Licenciada en Letras) entrevistado por Diálogo Político sobre el rol del periodismo en la política.'
+            }}
+
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<div class="footer">
+  <table>
+    <tr>
+      <td class="align-center">
+
+        {{> networks
+            message='Síguenos en las redes sociales'
+            instagram-link='https://www.instagram.com'
+            youtube-link='https://www.youtube.com'
+            twitter-link='http://twitter.com'
+            facebook-link='https://www.facebook.com'
+        }}
+
+        {{> divider type='compact' }}
+
+        <table class="footer-content-wrapper">
+          <tr>
+            <td class="align-left">
+              <a href="http://www.kas.de/uruguay/es/" target="_blank" title="KAF Oficina Uruguay" class="kas-footer-link">
+                <img src="https://via.placeholder.com/300x130" alt="Logotipo FUNDACIÓN KONRAD ADENAUER" class="logo">
+              </a>
+              <p class="kas-caption">Fundación Konrad Adenauer</p>
+              <small class="kas-mini-caption">Oficina Montevideo</small>
+              <p>
+                <a href="https://www.google.com/maps">Street Adress, number - Neigorwood</a>
+                <br> Postal code, City, Country <br>
+                <a href="tel:+59829020943">Tel. +555 000 00 00</a><br>
+                <a href="http://www.kas.de/uruguay/es/" target="_blank">www.kas.de/uruguay/es/</a>
+              </p>
+            </td>
+            <td class="align-right responsive-shadow-footer">
+              <p>Usted recibe este boletín porque ha sido incluido en <br>la base de datos de <a href="http://www.dialogopolitico.org">www.dialogopolitico.org&nbsp;©</a></p>
+              <p>¿Quieres salir de la lista de distribución?<br>
+              <a href="http://119091.mailings.kas.de/f/119091-191199/wwu/" target="_blank"><unsubscribe>Dar de baja</unsubscribe></a></p>
+              <a href="http://www.kas.de/uruguay/es/" target="_blank">© Konrad-Adenauer-Stiftung e.V. 2018</a>
+            </td>
+          </tr>
+        </table>
+
+        {{> divider type='compact' class='shadow-footer-divider' }}
+
+        <table class="shadow-footer">
+          <tr>
+            <td>
+              <p>Usted recibe este boletín porque ha sido incluido en <br>la base de datos de <a href="http://www.dialogopolitico.org">www.dialogopolitico.org&nbsp;©</a></p>
+              <p>¿Quieres salir de la lista de distribución?<br>
+              <a href="http://119091.mailings.kas.de/f/119091-191199/wwu/" target="_blank"><unsubscribe>Dar de baja</unsubscribe></a></p>
+              <a href="http://www.kas.de/uruguay/es/" target="_blank">© Konrad-Adenauer-Stiftung e.V. 2018</a>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
